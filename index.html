@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- CSS style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerNav">
+        <div class="container">
+          <section class="navTop">
+            <div class="logo">Phone<span>Shop</span></div>
+            <div class="search">
+              <form action="">
+                <input
+                  type="search"
+                  id="product-search"
+                  name="q"
+                  placeholder="SEARCH"
+                />
+                <button class="btnSearch"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="header-nav">
+              <a href=""><i class="fas fa-search search-responsive"></i></a>
+              <a href="" class="show-singIn"
+                ><i class="fas fa-user"></i> <span>Sign In</span></a
+              >
+              <a href="#shopCart"
+                ><i class="fas fa-shopping-cart"></i> <span>Cart</span></a
+              >
+            </div>
+            <div class="resp-search-modal hidden">
+              <div class="search-header">
+                <button class="btn-search-close">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="search-body">
+                <div class="search-modal">
+                  <form action="">
+                    <input
+                      type="search"
+                      id="product-search-modal"
+                      name="q"
+                      placeholder="SEARCH"
+                    />
+                    <button class="btnSearchModal">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="separate"></div>
+        <div class="container">
+          <div class="nav">
+            <div class="primary-nav-responsive">
+              <a href="" class="primary-dropdown"
+                ><i class="fas fa-bars"></i
+              ></a>
+              <div class="dropdown-nav-menu hidden">
+                <a href="" class="closeBtn"><i class="fas fa-times"></i></a>
+                <a href="">Phones</a>
+                <a href="">Accessories</a>
+                <a href="">Top Deals</a>
+                <a href="">Support</a>
+              </div>
+            </div>
+            <div class="primary-nav">
+              <a href="">Phones</a>
+              <a href="">Accessories</a>
+              <a href="">Top Deals</a>
+              <a href="">Support</a>
+            </div>
+            <div class="language-nav">
+              <ul>
+                <li class="dropdown-menu">
+                  <a href="" class="select">SK</a>
+                  <ul class="dropdown-area hidden">
+                    <li><a href="">EN</a></li>
+                    <li><a href="">DE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="signin-form hidden">
+        <button class="btn-form-close"><i class="fas fa-times"></i></button>
+        <div class="form-header">
+          <h2>Sign In</h2>
+        </div>
+        <div class="form-body">
+          <label>Username</label>
+          <input type="text" />
+          <label>Password</label>
+          <input type="text" />
+          <button>SIGN IN</button>
+        </div>
+        <div class="form-footer">
+          <a href="">Forgot your password?</a>
+          <a href="">Registration</a>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+      <div class="carousel">
+        <div class="carousel-slide">
+          <div class="slide fade">
+            <img
+              src="img/carousel/daniel-romero-TpXoTb1uR5A-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="img/carousel/lorenzo-rui-J7xrBW_oYJc-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="img/carousel/rodion-kutsaev-0VGG7cqTwCo-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="dots-container">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+        <div class="carousel-overlay">
+          <img src="img/carousel/freestocks-Ve-0V0SZ3SU-unsplash.jpg" alt="" />
+          <div class="carousel-content-wrap">
+            <div class="carousel-content">
+              <h2>Deal of the day</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Distinctio deserunt aperiam enim ad consequuntur obcaecati.
+              </p>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="top-product">
+      <div class="container">
+        <h2>Top products</h2>
+        <div class="product-wraper">
+          <div class="product-slider">
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-2.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>286.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-8.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>440.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-3.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>385.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-4.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>371.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-5.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>286.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-6.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>182.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-7.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>761.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="card-img">
+                <img src="img/product/product-1.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <h4>Name product</h4>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, maiores.
+                </p>
+                <p class="price">
+                  <span>286.00 €</span><i class="fas fa-shopping-cart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="btn-slider prev">
+            <i class="fas fa-2x fa-angle-left"></i>
+          </button>
+          <button class="btn-slider next">
+            <i class="fas fa-2x fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="services reveal-section">
+      <h2>Our speciality</h2>
+      <h3>Shop safely and confidently</h3>
+      <div class="container">
+        <div class="services-wrap">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-comments-dollar"></i>
+            </div>
+            <div class="service-text">
+              <h4>Loyalty Discounts</h4>
+              <p>Get your bonus card.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-shipping-fast"></i></div>
+            <div class="service-text">
+              <h4>Fast Shipping</h4>
+              <p>Order in as little as 1 hour.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-truck"></i></div>
+            <div class="service-text">
+              <h4>Free Shipping</h4>
+              <p>On orders over 40€.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <div class="service-text">
+              <h4>24 Months Warranty</h4>
+              <p>Money back guarantee.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer reveal-section">
+      <div class="container">
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h3>About us</h3>
+            <p class="footer-about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et
+              similique officiis alias culpa sapiente.
+            </p>
+          </div>
+          <div class="footer-nav-col">
+            <h3>Payment</h3>
+            <p class="payment">
+              <i class="fab fa-3x fa-cc-visa"></i>
+              <i class="fab fa-3x fa-cc-paypal"></i>
+              <i class="fab fa-3x fa-cc-mastercard"></i>
+            </p>
+            <p class="payment">
+              <i class="fab fa-3x fa-cc-amazon-pay"></i>
+              <i class="fab fa-3x fa-cc-apple-pay"></i>
+              <i class="fab fa-3x fa-cc-stripe"></i>
+            </p>
+          </div>
+          <div class="footer-nav-col">
+            <h3>Info</h3>
+            <ul>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>GDPR</li>
+              <li>Careers</li>
+              <li>Our Policies</li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h3>Contact Info</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Streeet 21, Slovakia
+              </li>
+              <li><i class="fas fa-phone-alt"></i> +421 900 123 456</li>
+              <li><i class="fas fa-envelope"></i> example@gmail.com</li>
+              <li><i class="fas fa-globe"></i> www.siteweb.com</li>
+            </ul>
+            <p class="social">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-pinterest-square"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="post-footer">&copy; 2021 All rights reserved</div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
